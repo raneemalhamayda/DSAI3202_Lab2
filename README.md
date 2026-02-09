@@ -149,3 +149,88 @@ azcopy list "https://amazonelectron1446226083.blob.core.windows.net/processed/re
 
 --note: added the screenshots in the screenshots folder
 
+
+
+# DSAI3202 Lab 3 — Data Preprocessing in Azure (Medallion Architecture)
+This section documents the workflow for Lab 3: transitioning from raw data to a curated, ML-ready dataset using Azure Databricks and the Medallion Architecture.
+
+Overview
+Goal:
+
+Implement a Medallion Architecture to refine data from raw JSON to curated features.
+
+Use Azure Databricks to perform distributed data processing with Spark.
+
+Orchestrate the pipeline using Databricks Jobs to run notebooks in sequence.
+
+Visualize data insights using Python libraries (Matplotlib/Seaborn).
+
+Data Layers (Medallion Architecture)
+Bronze (Raw): Original data ingested in Lab 2 (JSON format).
+
+Silver (Processed): Cleaned, structured, and filtered data (Parquet/Delta format).
+
+Gold (Curated): Business-level aggregates or ML-ready features (e.g., intermediate features for recommendation engines).
+
+Lab 3 Workflow
+1. Environment Setup
+Compute: Created a Databricks Cluster to execute Spark code.
+
+Storage Integration: Mounted Azure Blob Storage (raw and processed containers) to Databricks using a SAS token or Service Principal to allow Spark to read/write directly to the lake.
+
+2. Data Transformation Steps
+The pipeline consists of three main notebooks:
+
+Notebook 1: Bronze to Silver (Cleaning)
+
+Reads raw JSON reviews and metadata.
+
+Handles missing values and enforces schemas.
+
+Converts data types (e.g., converting Unix timestamps to readable dates).
+
+Saves output to the processed/ container in Parquet format.
+
+Notebook 2: Silver to Gold (Feature Engineering)
+
+Joins the reviews data with product metadata.
+
+Calculates transformations (e.g., average ratings per brand, review length, or helpfulness ratios).
+
+Filters out low-quality data to create a "Gold" dataset ready for analytics.
+
+Notebook 3: Analytics & Visualization
+
+Loads the Gold dataset into a Spark DataFrame.
+
+Uses Seaborn and Matplotlib to create visualizations.
+
+Example: Analyzed rating distributions across different electronic brands and trends in review volume over time.
+
+3. Pipeline Orchestration (Databricks Jobs)
+Instead of running notebooks manually, a Databricks Job was created to:
+
+Trigger the Bronze-to-Silver notebook.
+
+On success, trigger the Silver-to-Gold notebook.
+
+Ensure an end-to-end automated flow from the raw data lake to the final curated features.
+
+Technologies Used
+Apache Spark: The engine used for distributed data processing.
+
+Azure Databricks: The managed Spark platform for notebook-based development and job scheduling.
+
+Parquet/Delta Lake: Optimized columnar storage formats used for the Silver and Gold layers to improve query performance.
+
+Matplotlib/Seaborn: Python libraries used for the final data visualization layer.
+
+Submission Checklist (Branch: lab3)
+[x] All .ipynb notebooks committed to the lab3 branch.
+
+[x] Data visualizations included within the notebooks.
+
+[x] README updated with Medallion Architecture explanations.
+
+[x] Verified end-to-end execution of Databricks Jobs.
+
