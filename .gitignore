@@ -2,3 +2,8 @@
 datastores/curated_adls.yml
 
 datastores/curated_adls.yml
+datastores/curated_adls.yml
+merge_out_download/
+merge_all_download/
+merge_out/
+*.parquet
