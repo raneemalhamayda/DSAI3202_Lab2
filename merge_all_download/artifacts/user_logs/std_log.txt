@@ -1,4 +1,0 @@
-/bin/bash: /azureml-envs/sklearn-1.1/lib/libtinfo.so.6: no version information available (required by /bin/bash)
-Merged rows: 100
-Merged cols: 893
-Wrote: /mnt/azureml/cr/j/796fa47508a846b8ac5459487410f0eb/cap/data-capability/wd/out/data.parquet
