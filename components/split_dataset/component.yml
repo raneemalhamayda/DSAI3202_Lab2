@@ -1,0 +1,38 @@
+﻿$schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
+name: split_dataset
+display_name: Split Dataset
+type: command
+
+inputs:
+  data:
+    type: uri_folder
+  test_size:
+    type: number
+    default: 0.2
+  val_size:
+    type: number
+    default: 0.1
+  seed:
+    type: integer
+    default: 42
+
+outputs:
+  train:
+    type: uri_folder
+  val:
+    type: uri_folder
+  test:
+    type: uri_folder
+
+code: .
+command: >
+  python split.py
+  --data ${{inputs.data}}
+  --test_size ${{inputs.test_size}}
+  --val_size ${{inputs.val_size}}
+  --seed ${{inputs.seed}}
+  --train ${{outputs.train}}
+  --val ${{outputs.val}}
+  --test ${{outputs.test}}
+
+environment: azureml:AzureML-sklearn-1.1-ubuntu20.04-py38-cpu@latest

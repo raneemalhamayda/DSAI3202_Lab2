@@ -1,0 +1,1796 @@
+﻿$schema: http://azureml/sdk-2-0/FeatureSetSpec.json
+
+source:
+  type: parquet
+  path: abfs://curated@amazonelectron1446226083.dfs.core.windows.net/feature_store/merge_all/olive_rose_y5lxghzlqp/
+  timestamp_column:
+    name: event_time
+    format: MM dd, yyyy
+
+features:
+  - name: review_length_chars
+    type: long
+  - name: review_length_words
+    type: long
+  - name: sentiment_neg
+    type: float
+  - name: sentiment_neu
+    type: float
+  - name: sentiment_pos
+    type: float
+  - name: sentiment_compound
+    type: float
+  - name: tfidf_0
+    type: float
+  - name: tfidf_1
+    type: float
+  - name: tfidf_2
+    type: float
+  - name: tfidf_3
+    type: float
+  - name: tfidf_4
+    type: float
+  - name: tfidf_5
+    type: float
+  - name: tfidf_6
+    type: float
+  - name: tfidf_7
+    type: float
+  - name: tfidf_8
+    type: float
+  - name: tfidf_9
+    type: float
+  - name: tfidf_10
+    type: float
+  - name: tfidf_11
+    type: float
+  - name: tfidf_12
+    type: float
+  - name: tfidf_13
+    type: float
+  - name: tfidf_14
+    type: float
+  - name: tfidf_15
+    type: float
+  - name: tfidf_16
+    type: float
+  - name: tfidf_17
+    type: float
+  - name: tfidf_18
+    type: float
+  - name: tfidf_19
+    type: float
+  - name: tfidf_20
+    type: float
+  - name: tfidf_21
+    type: float
+  - name: tfidf_22
+    type: float
+  - name: tfidf_23
+    type: float
+  - name: tfidf_24
+    type: float
+  - name: tfidf_25
+    type: float
+  - name: tfidf_26
+    type: float
+  - name: tfidf_27
+    type: float
+  - name: tfidf_28
+    type: float
+  - name: tfidf_29
+    type: float
+  - name: tfidf_30
+    type: float
+  - name: tfidf_31
+    type: float
+  - name: tfidf_32
+    type: float
+  - name: tfidf_33
+    type: float
+  - name: tfidf_34
+    type: float
+  - name: tfidf_35
+    type: float
+  - name: tfidf_36
+    type: float
+  - name: tfidf_37
+    type: float
+  - name: tfidf_38
+    type: float
+  - name: tfidf_39
+    type: float
+  - name: tfidf_40
+    type: float
+  - name: tfidf_41
+    type: float
+  - name: tfidf_42
+    type: float
+  - name: tfidf_43
+    type: float
+  - name: tfidf_44
+    type: float
+  - name: tfidf_45
+    type: float
+  - name: tfidf_46
+    type: float
+  - name: tfidf_47
+    type: float
+  - name: tfidf_48
+    type: float
+  - name: tfidf_49
+    type: float
+  - name: tfidf_50
+    type: float
+  - name: tfidf_51
+    type: float
+  - name: tfidf_52
+    type: float
+  - name: tfidf_53
+    type: float
+  - name: tfidf_54
+    type: float
+  - name: tfidf_55
+    type: float
+  - name: tfidf_56
+    type: float
+  - name: tfidf_57
+    type: float
+  - name: tfidf_58
+    type: float
+  - name: tfidf_59
+    type: float
+  - name: tfidf_60
+    type: float
+  - name: tfidf_61
+    type: float
+  - name: tfidf_62
+    type: float
+  - name: tfidf_63
+    type: float
+  - name: tfidf_64
+    type: float
+  - name: tfidf_65
+    type: float
+  - name: tfidf_66
+    type: float
+  - name: tfidf_67
+    type: float
+  - name: tfidf_68
+    type: float
+  - name: tfidf_69
+    type: float
+  - name: tfidf_70
+    type: float
+  - name: tfidf_71
+    type: float
+  - name: tfidf_72
+    type: float
+  - name: tfidf_73
+    type: float
+  - name: tfidf_74
+    type: float
+  - name: tfidf_75
+    type: float
+  - name: tfidf_76
+    type: float
+  - name: tfidf_77
+    type: float
+  - name: tfidf_78
+    type: float
+  - name: tfidf_79
+    type: float
+  - name: tfidf_80
+    type: float
+  - name: tfidf_81
+    type: float
+  - name: tfidf_82
+    type: float
+  - name: tfidf_83
+    type: float
+  - name: tfidf_84
+    type: float
+  - name: tfidf_85
+    type: float
+  - name: tfidf_86
+    type: float
+  - name: tfidf_87
+    type: float
+  - name: tfidf_88
+    type: float
+  - name: tfidf_89
+    type: float
+  - name: tfidf_90
+    type: float
+  - name: tfidf_91
+    type: float
+  - name: tfidf_92
+    type: float
+  - name: tfidf_93
+    type: float
+  - name: tfidf_94
+    type: float
+  - name: tfidf_95
+    type: float
+  - name: tfidf_96
+    type: float
+  - name: tfidf_97
+    type: float
+  - name: tfidf_98
+    type: float
+  - name: tfidf_99
+    type: float
+  - name: tfidf_100
+    type: float
+  - name: tfidf_101
+    type: float
+  - name: tfidf_102
+    type: float
+  - name: tfidf_103
+    type: float
+  - name: tfidf_104
+    type: float
+  - name: tfidf_105
+    type: float
+  - name: tfidf_106
+    type: float
+  - name: tfidf_107
+    type: float
+  - name: tfidf_108
+    type: float
+  - name: tfidf_109
+    type: float
+  - name: tfidf_110
+    type: float
+  - name: tfidf_111
+    type: float
+  - name: tfidf_112
+    type: float
+  - name: tfidf_113
+    type: float
+  - name: tfidf_114
+    type: float
+  - name: tfidf_115
+    type: float
+  - name: tfidf_116
+    type: float
+  - name: tfidf_117
+    type: float
+  - name: tfidf_118
+    type: float
+  - name: tfidf_119
+    type: float
+  - name: tfidf_120
+    type: float
+  - name: tfidf_121
+    type: float
+  - name: tfidf_122
+    type: float
+  - name: tfidf_123
+    type: float
+  - name: tfidf_124
+    type: float
+  - name: tfidf_125
+    type: float
+  - name: tfidf_126
+    type: float
+  - name: tfidf_127
+    type: float
+  - name: tfidf_128
+    type: float
+  - name: tfidf_129
+    type: float
+  - name: tfidf_130
+    type: float
+  - name: tfidf_131
+    type: float
+  - name: tfidf_132
+    type: float
+  - name: tfidf_133
+    type: float
+  - name: tfidf_134
+    type: float
+  - name: tfidf_135
+    type: float
+  - name: tfidf_136
+    type: float
+  - name: tfidf_137
+    type: float
+  - name: tfidf_138
+    type: float
+  - name: tfidf_139
+    type: float
+  - name: tfidf_140
+    type: float
+  - name: tfidf_141
+    type: float
+  - name: tfidf_142
+    type: float
+  - name: tfidf_143
+    type: float
+  - name: tfidf_144
+    type: float
+  - name: tfidf_145
+    type: float
+  - name: tfidf_146
+    type: float
+  - name: tfidf_147
+    type: float
+  - name: tfidf_148
+    type: float
+  - name: tfidf_149
+    type: float
+  - name: tfidf_150
+    type: float
+  - name: tfidf_151
+    type: float
+  - name: tfidf_152
+    type: float
+  - name: tfidf_153
+    type: float
+  - name: tfidf_154
+    type: float
+  - name: tfidf_155
+    type: float
+  - name: tfidf_156
+    type: float
+  - name: tfidf_157
+    type: float
+  - name: tfidf_158
+    type: float
+  - name: tfidf_159
+    type: float
+  - name: tfidf_160
+    type: float
+  - name: tfidf_161
+    type: float
+  - name: tfidf_162
+    type: float
+  - name: tfidf_163
+    type: float
+  - name: tfidf_164
+    type: float
+  - name: tfidf_165
+    type: float
+  - name: tfidf_166
+    type: float
+  - name: tfidf_167
+    type: float
+  - name: tfidf_168
+    type: float
+  - name: tfidf_169
+    type: float
+  - name: tfidf_170
+    type: float
+  - name: tfidf_171
+    type: float
+  - name: tfidf_172
+    type: float
+  - name: tfidf_173
+    type: float
+  - name: tfidf_174
+    type: float
+  - name: tfidf_175
+    type: float
+  - name: tfidf_176
+    type: float
+  - name: tfidf_177
+    type: float
+  - name: tfidf_178
+    type: float
+  - name: tfidf_179
+    type: float
+  - name: tfidf_180
+    type: float
+  - name: tfidf_181
+    type: float
+  - name: tfidf_182
+    type: float
+  - name: tfidf_183
+    type: float
+  - name: tfidf_184
+    type: float
+  - name: tfidf_185
+    type: float
+  - name: tfidf_186
+    type: float
+  - name: tfidf_187
+    type: float
+  - name: tfidf_188
+    type: float
+  - name: tfidf_189
+    type: float
+  - name: tfidf_190
+    type: float
+  - name: tfidf_191
+    type: float
+  - name: tfidf_192
+    type: float
+  - name: tfidf_193
+    type: float
+  - name: tfidf_194
+    type: float
+  - name: tfidf_195
+    type: float
+  - name: tfidf_196
+    type: float
+  - name: tfidf_197
+    type: float
+  - name: tfidf_198
+    type: float
+  - name: tfidf_199
+    type: float
+  - name: tfidf_200
+    type: float
+  - name: tfidf_201
+    type: float
+  - name: tfidf_202
+    type: float
+  - name: tfidf_203
+    type: float
+  - name: tfidf_204
+    type: float
+  - name: tfidf_205
+    type: float
+  - name: tfidf_206
+    type: float
+  - name: tfidf_207
+    type: float
+  - name: tfidf_208
+    type: float
+  - name: tfidf_209
+    type: float
+  - name: tfidf_210
+    type: float
+  - name: tfidf_211
+    type: float
+  - name: tfidf_212
+    type: float
+  - name: tfidf_213
+    type: float
+  - name: tfidf_214
+    type: float
+  - name: tfidf_215
+    type: float
+  - name: tfidf_216
+    type: float
+  - name: tfidf_217
+    type: float
+  - name: tfidf_218
+    type: float
+  - name: tfidf_219
+    type: float
+  - name: tfidf_220
+    type: float
+  - name: tfidf_221
+    type: float
+  - name: tfidf_222
+    type: float
+  - name: tfidf_223
+    type: float
+  - name: tfidf_224
+    type: float
+  - name: tfidf_225
+    type: float
+  - name: tfidf_226
+    type: float
+  - name: tfidf_227
+    type: float
+  - name: tfidf_228
+    type: float
+  - name: tfidf_229
+    type: float
+  - name: tfidf_230
+    type: float
+  - name: tfidf_231
+    type: float
+  - name: tfidf_232
+    type: float
+  - name: tfidf_233
+    type: float
+  - name: tfidf_234
+    type: float
+  - name: tfidf_235
+    type: float
+  - name: tfidf_236
+    type: float
+  - name: tfidf_237
+    type: float
+  - name: tfidf_238
+    type: float
+  - name: tfidf_239
+    type: float
+  - name: tfidf_240
+    type: float
+  - name: tfidf_241
+    type: float
+  - name: tfidf_242
+    type: float
+  - name: tfidf_243
+    type: float
+  - name: tfidf_244
+    type: float
+  - name: tfidf_245
+    type: float
+  - name: tfidf_246
+    type: float
+  - name: tfidf_247
+    type: float
+  - name: tfidf_248
+    type: float
+  - name: tfidf_249
+    type: float
+  - name: tfidf_250
+    type: float
+  - name: tfidf_251
+    type: float
+  - name: tfidf_252
+    type: float
+  - name: tfidf_253
+    type: float
+  - name: tfidf_254
+    type: float
+  - name: tfidf_255
+    type: float
+  - name: tfidf_256
+    type: float
+  - name: tfidf_257
+    type: float
+  - name: tfidf_258
+    type: float
+  - name: tfidf_259
+    type: float
+  - name: tfidf_260
+    type: float
+  - name: tfidf_261
+    type: float
+  - name: tfidf_262
+    type: float
+  - name: tfidf_263
+    type: float
+  - name: tfidf_264
+    type: float
+  - name: tfidf_265
+    type: float
+  - name: tfidf_266
+    type: float
+  - name: tfidf_267
+    type: float
+  - name: tfidf_268
+    type: float
+  - name: tfidf_269
+    type: float
+  - name: tfidf_270
+    type: float
+  - name: tfidf_271
+    type: float
+  - name: tfidf_272
+    type: float
+  - name: tfidf_273
+    type: float
+  - name: tfidf_274
+    type: float
+  - name: tfidf_275
+    type: float
+  - name: tfidf_276
+    type: float
+  - name: tfidf_277
+    type: float
+  - name: tfidf_278
+    type: float
+  - name: tfidf_279
+    type: float
+  - name: tfidf_280
+    type: float
+  - name: tfidf_281
+    type: float
+  - name: tfidf_282
+    type: float
+  - name: tfidf_283
+    type: float
+  - name: tfidf_284
+    type: float
+  - name: tfidf_285
+    type: float
+  - name: tfidf_286
+    type: float
+  - name: tfidf_287
+    type: float
+  - name: tfidf_288
+    type: float
+  - name: tfidf_289
+    type: float
+  - name: tfidf_290
+    type: float
+  - name: tfidf_291
+    type: float
+  - name: tfidf_292
+    type: float
+  - name: tfidf_293
+    type: float
+  - name: tfidf_294
+    type: float
+  - name: tfidf_295
+    type: float
+  - name: tfidf_296
+    type: float
+  - name: tfidf_297
+    type: float
+  - name: tfidf_298
+    type: float
+  - name: tfidf_299
+    type: float
+  - name: tfidf_300
+    type: float
+  - name: tfidf_301
+    type: float
+  - name: tfidf_302
+    type: float
+  - name: tfidf_303
+    type: float
+  - name: tfidf_304
+    type: float
+  - name: tfidf_305
+    type: float
+  - name: tfidf_306
+    type: float
+  - name: tfidf_307
+    type: float
+  - name: tfidf_308
+    type: float
+  - name: tfidf_309
+    type: float
+  - name: tfidf_310
+    type: float
+  - name: tfidf_311
+    type: float
+  - name: tfidf_312
+    type: float
+  - name: tfidf_313
+    type: float
+  - name: tfidf_314
+    type: float
+  - name: tfidf_315
+    type: float
+  - name: tfidf_316
+    type: float
+  - name: tfidf_317
+    type: float
+  - name: tfidf_318
+    type: float
+  - name: tfidf_319
+    type: float
+  - name: tfidf_320
+    type: float
+  - name: tfidf_321
+    type: float
+  - name: tfidf_322
+    type: float
+  - name: tfidf_323
+    type: float
+  - name: tfidf_324
+    type: float
+  - name: tfidf_325
+    type: float
+  - name: tfidf_326
+    type: float
+  - name: tfidf_327
+    type: float
+  - name: tfidf_328
+    type: float
+  - name: tfidf_329
+    type: float
+  - name: tfidf_330
+    type: float
+  - name: tfidf_331
+    type: float
+  - name: tfidf_332
+    type: float
+  - name: tfidf_333
+    type: float
+  - name: tfidf_334
+    type: float
+  - name: tfidf_335
+    type: float
+  - name: tfidf_336
+    type: float
+  - name: tfidf_337
+    type: float
+  - name: tfidf_338
+    type: float
+  - name: tfidf_339
+    type: float
+  - name: tfidf_340
+    type: float
+  - name: tfidf_341
+    type: float
+  - name: tfidf_342
+    type: float
+  - name: tfidf_343
+    type: float
+  - name: tfidf_344
+    type: float
+  - name: tfidf_345
+    type: float
+  - name: tfidf_346
+    type: float
+  - name: tfidf_347
+    type: float
+  - name: tfidf_348
+    type: float
+  - name: tfidf_349
+    type: float
+  - name: tfidf_350
+    type: float
+  - name: tfidf_351
+    type: float
+  - name: tfidf_352
+    type: float
+  - name: tfidf_353
+    type: float
+  - name: tfidf_354
+    type: float
+  - name: tfidf_355
+    type: float
+  - name: tfidf_356
+    type: float
+  - name: tfidf_357
+    type: float
+  - name: tfidf_358
+    type: float
+  - name: tfidf_359
+    type: float
+  - name: tfidf_360
+    type: float
+  - name: tfidf_361
+    type: float
+  - name: tfidf_362
+    type: float
+  - name: tfidf_363
+    type: float
+  - name: tfidf_364
+    type: float
+  - name: tfidf_365
+    type: float
+  - name: tfidf_366
+    type: float
+  - name: tfidf_367
+    type: float
+  - name: tfidf_368
+    type: float
+  - name: tfidf_369
+    type: float
+  - name: tfidf_370
+    type: float
+  - name: tfidf_371
+    type: float
+  - name: tfidf_372
+    type: float
+  - name: tfidf_373
+    type: float
+  - name: tfidf_374
+    type: float
+  - name: tfidf_375
+    type: float
+  - name: tfidf_376
+    type: float
+  - name: tfidf_377
+    type: float
+  - name: tfidf_378
+    type: float
+  - name: tfidf_379
+    type: float
+  - name: tfidf_380
+    type: float
+  - name: tfidf_381
+    type: float
+  - name: tfidf_382
+    type: float
+  - name: tfidf_383
+    type: float
+  - name: tfidf_384
+    type: float
+  - name: tfidf_385
+    type: float
+  - name: tfidf_386
+    type: float
+  - name: tfidf_387
+    type: float
+  - name: tfidf_388
+    type: float
+  - name: tfidf_389
+    type: float
+  - name: tfidf_390
+    type: float
+  - name: tfidf_391
+    type: float
+  - name: tfidf_392
+    type: float
+  - name: tfidf_393
+    type: float
+  - name: tfidf_394
+    type: float
+  - name: tfidf_395
+    type: float
+  - name: tfidf_396
+    type: float
+  - name: tfidf_397
+    type: float
+  - name: tfidf_398
+    type: float
+  - name: tfidf_399
+    type: float
+  - name: tfidf_400
+    type: float
+  - name: tfidf_401
+    type: float
+  - name: tfidf_402
+    type: float
+  - name: tfidf_403
+    type: float
+  - name: tfidf_404
+    type: float
+  - name: tfidf_405
+    type: float
+  - name: tfidf_406
+    type: float
+  - name: tfidf_407
+    type: float
+  - name: tfidf_408
+    type: float
+  - name: tfidf_409
+    type: float
+  - name: tfidf_410
+    type: float
+  - name: tfidf_411
+    type: float
+  - name: tfidf_412
+    type: float
+  - name: tfidf_413
+    type: float
+  - name: tfidf_414
+    type: float
+  - name: tfidf_415
+    type: float
+  - name: tfidf_416
+    type: float
+  - name: tfidf_417
+    type: float
+  - name: tfidf_418
+    type: float
+  - name: tfidf_419
+    type: float
+  - name: tfidf_420
+    type: float
+  - name: tfidf_421
+    type: float
+  - name: tfidf_422
+    type: float
+  - name: tfidf_423
+    type: float
+  - name: tfidf_424
+    type: float
+  - name: tfidf_425
+    type: float
+  - name: tfidf_426
+    type: float
+  - name: tfidf_427
+    type: float
+  - name: tfidf_428
+    type: float
+  - name: tfidf_429
+    type: float
+  - name: tfidf_430
+    type: float
+  - name: tfidf_431
+    type: float
+  - name: tfidf_432
+    type: float
+  - name: tfidf_433
+    type: float
+  - name: tfidf_434
+    type: float
+  - name: tfidf_435
+    type: float
+  - name: tfidf_436
+    type: float
+  - name: tfidf_437
+    type: float
+  - name: tfidf_438
+    type: float
+  - name: tfidf_439
+    type: float
+  - name: tfidf_440
+    type: float
+  - name: tfidf_441
+    type: float
+  - name: tfidf_442
+    type: float
+  - name: tfidf_443
+    type: float
+  - name: tfidf_444
+    type: float
+  - name: tfidf_445
+    type: float
+  - name: tfidf_446
+    type: float
+  - name: tfidf_447
+    type: float
+  - name: tfidf_448
+    type: float
+  - name: tfidf_449
+    type: float
+  - name: tfidf_450
+    type: float
+  - name: tfidf_451
+    type: float
+  - name: tfidf_452
+    type: float
+  - name: tfidf_453
+    type: float
+  - name: tfidf_454
+    type: float
+  - name: tfidf_455
+    type: float
+  - name: tfidf_456
+    type: float
+  - name: tfidf_457
+    type: float
+  - name: tfidf_458
+    type: float
+  - name: tfidf_459
+    type: float
+  - name: tfidf_460
+    type: float
+  - name: tfidf_461
+    type: float
+  - name: tfidf_462
+    type: float
+  - name: tfidf_463
+    type: float
+  - name: tfidf_464
+    type: float
+  - name: tfidf_465
+    type: float
+  - name: tfidf_466
+    type: float
+  - name: tfidf_467
+    type: float
+  - name: tfidf_468
+    type: float
+  - name: tfidf_469
+    type: float
+  - name: tfidf_470
+    type: float
+  - name: tfidf_471
+    type: float
+  - name: tfidf_472
+    type: float
+  - name: tfidf_473
+    type: float
+  - name: tfidf_474
+    type: float
+  - name: tfidf_475
+    type: float
+  - name: tfidf_476
+    type: float
+  - name: tfidf_477
+    type: float
+  - name: tfidf_478
+    type: float
+  - name: tfidf_479
+    type: float
+  - name: tfidf_480
+    type: float
+  - name: tfidf_481
+    type: float
+  - name: tfidf_482
+    type: float
+  - name: tfidf_483
+    type: float
+  - name: tfidf_484
+    type: float
+  - name: tfidf_485
+    type: float
+  - name: tfidf_486
+    type: float
+  - name: tfidf_487
+    type: float
+  - name: tfidf_488
+    type: float
+  - name: tfidf_489
+    type: float
+  - name: tfidf_490
+    type: float
+  - name: tfidf_491
+    type: float
+  - name: tfidf_492
+    type: float
+  - name: tfidf_493
+    type: float
+  - name: tfidf_494
+    type: float
+  - name: tfidf_495
+    type: float
+  - name: tfidf_496
+    type: float
+  - name: tfidf_497
+    type: float
+  - name: tfidf_498
+    type: float
+  - name: tfidf_499
+    type: float
+  - name: sbert_0
+    type: float
+  - name: sbert_1
+    type: float
+  - name: sbert_2
+    type: float
+  - name: sbert_3
+    type: float
+  - name: sbert_4
+    type: float
+  - name: sbert_5
+    type: float
+  - name: sbert_6
+    type: float
+  - name: sbert_7
+    type: float
+  - name: sbert_8
+    type: float
+  - name: sbert_9
+    type: float
+  - name: sbert_10
+    type: float
+  - name: sbert_11
+    type: float
+  - name: sbert_12
+    type: float
+  - name: sbert_13
+    type: float
+  - name: sbert_14
+    type: float
+  - name: sbert_15
+    type: float
+  - name: sbert_16
+    type: float
+  - name: sbert_17
+    type: float
+  - name: sbert_18
+    type: float
+  - name: sbert_19
+    type: float
+  - name: sbert_20
+    type: float
+  - name: sbert_21
+    type: float
+  - name: sbert_22
+    type: float
+  - name: sbert_23
+    type: float
+  - name: sbert_24
+    type: float
+  - name: sbert_25
+    type: float
+  - name: sbert_26
+    type: float
+  - name: sbert_27
+    type: float
+  - name: sbert_28
+    type: float
+  - name: sbert_29
+    type: float
+  - name: sbert_30
+    type: float
+  - name: sbert_31
+    type: float
+  - name: sbert_32
+    type: float
+  - name: sbert_33
+    type: float
+  - name: sbert_34
+    type: float
+  - name: sbert_35
+    type: float
+  - name: sbert_36
+    type: float
+  - name: sbert_37
+    type: float
+  - name: sbert_38
+    type: float
+  - name: sbert_39
+    type: float
+  - name: sbert_40
+    type: float
+  - name: sbert_41
+    type: float
+  - name: sbert_42
+    type: float
+  - name: sbert_43
+    type: float
+  - name: sbert_44
+    type: float
+  - name: sbert_45
+    type: float
+  - name: sbert_46
+    type: float
+  - name: sbert_47
+    type: float
+  - name: sbert_48
+    type: float
+  - name: sbert_49
+    type: float
+  - name: sbert_50
+    type: float
+  - name: sbert_51
+    type: float
+  - name: sbert_52
+    type: float
+  - name: sbert_53
+    type: float
+  - name: sbert_54
+    type: float
+  - name: sbert_55
+    type: float
+  - name: sbert_56
+    type: float
+  - name: sbert_57
+    type: float
+  - name: sbert_58
+    type: float
+  - name: sbert_59
+    type: float
+  - name: sbert_60
+    type: float
+  - name: sbert_61
+    type: float
+  - name: sbert_62
+    type: float
+  - name: sbert_63
+    type: float
+  - name: sbert_64
+    type: float
+  - name: sbert_65
+    type: float
+  - name: sbert_66
+    type: float
+  - name: sbert_67
+    type: float
+  - name: sbert_68
+    type: float
+  - name: sbert_69
+    type: float
+  - name: sbert_70
+    type: float
+  - name: sbert_71
+    type: float
+  - name: sbert_72
+    type: float
+  - name: sbert_73
+    type: float
+  - name: sbert_74
+    type: float
+  - name: sbert_75
+    type: float
+  - name: sbert_76
+    type: float
+  - name: sbert_77
+    type: float
+  - name: sbert_78
+    type: float
+  - name: sbert_79
+    type: float
+  - name: sbert_80
+    type: float
+  - name: sbert_81
+    type: float
+  - name: sbert_82
+    type: float
+  - name: sbert_83
+    type: float
+  - name: sbert_84
+    type: float
+  - name: sbert_85
+    type: float
+  - name: sbert_86
+    type: float
+  - name: sbert_87
+    type: float
+  - name: sbert_88
+    type: float
+  - name: sbert_89
+    type: float
+  - name: sbert_90
+    type: float
+  - name: sbert_91
+    type: float
+  - name: sbert_92
+    type: float
+  - name: sbert_93
+    type: float
+  - name: sbert_94
+    type: float
+  - name: sbert_95
+    type: float
+  - name: sbert_96
+    type: float
+  - name: sbert_97
+    type: float
+  - name: sbert_98
+    type: float
+  - name: sbert_99
+    type: float
+  - name: sbert_100
+    type: float
+  - name: sbert_101
+    type: float
+  - name: sbert_102
+    type: float
+  - name: sbert_103
+    type: float
+  - name: sbert_104
+    type: float
+  - name: sbert_105
+    type: float
+  - name: sbert_106
+    type: float
+  - name: sbert_107
+    type: float
+  - name: sbert_108
+    type: float
+  - name: sbert_109
+    type: float
+  - name: sbert_110
+    type: float
+  - name: sbert_111
+    type: float
+  - name: sbert_112
+    type: float
+  - name: sbert_113
+    type: float
+  - name: sbert_114
+    type: float
+  - name: sbert_115
+    type: float
+  - name: sbert_116
+    type: float
+  - name: sbert_117
+    type: float
+  - name: sbert_118
+    type: float
+  - name: sbert_119
+    type: float
+  - name: sbert_120
+    type: float
+  - name: sbert_121
+    type: float
+  - name: sbert_122
+    type: float
+  - name: sbert_123
+    type: float
+  - name: sbert_124
+    type: float
+  - name: sbert_125
+    type: float
+  - name: sbert_126
+    type: float
+  - name: sbert_127
+    type: float
+  - name: sbert_128
+    type: float
+  - name: sbert_129
+    type: float
+  - name: sbert_130
+    type: float
+  - name: sbert_131
+    type: float
+  - name: sbert_132
+    type: float
+  - name: sbert_133
+    type: float
+  - name: sbert_134
+    type: float
+  - name: sbert_135
+    type: float
+  - name: sbert_136
+    type: float
+  - name: sbert_137
+    type: float
+  - name: sbert_138
+    type: float
+  - name: sbert_139
+    type: float
+  - name: sbert_140
+    type: float
+  - name: sbert_141
+    type: float
+  - name: sbert_142
+    type: float
+  - name: sbert_143
+    type: float
+  - name: sbert_144
+    type: float
+  - name: sbert_145
+    type: float
+  - name: sbert_146
+    type: float
+  - name: sbert_147
+    type: float
+  - name: sbert_148
+    type: float
+  - name: sbert_149
+    type: float
+  - name: sbert_150
+    type: float
+  - name: sbert_151
+    type: float
+  - name: sbert_152
+    type: float
+  - name: sbert_153
+    type: float
+  - name: sbert_154
+    type: float
+  - name: sbert_155
+    type: float
+  - name: sbert_156
+    type: float
+  - name: sbert_157
+    type: float
+  - name: sbert_158
+    type: float
+  - name: sbert_159
+    type: float
+  - name: sbert_160
+    type: float
+  - name: sbert_161
+    type: float
+  - name: sbert_162
+    type: float
+  - name: sbert_163
+    type: float
+  - name: sbert_164
+    type: float
+  - name: sbert_165
+    type: float
+  - name: sbert_166
+    type: float
+  - name: sbert_167
+    type: float
+  - name: sbert_168
+    type: float
+  - name: sbert_169
+    type: float
+  - name: sbert_170
+    type: float
+  - name: sbert_171
+    type: float
+  - name: sbert_172
+    type: float
+  - name: sbert_173
+    type: float
+  - name: sbert_174
+    type: float
+  - name: sbert_175
+    type: float
+  - name: sbert_176
+    type: float
+  - name: sbert_177
+    type: float
+  - name: sbert_178
+    type: float
+  - name: sbert_179
+    type: float
+  - name: sbert_180
+    type: float
+  - name: sbert_181
+    type: float
+  - name: sbert_182
+    type: float
+  - name: sbert_183
+    type: float
+  - name: sbert_184
+    type: float
+  - name: sbert_185
+    type: float
+  - name: sbert_186
+    type: float
+  - name: sbert_187
+    type: float
+  - name: sbert_188
+    type: float
+  - name: sbert_189
+    type: float
+  - name: sbert_190
+    type: float
+  - name: sbert_191
+    type: float
+  - name: sbert_192
+    type: float
+  - name: sbert_193
+    type: float
+  - name: sbert_194
+    type: float
+  - name: sbert_195
+    type: float
+  - name: sbert_196
+    type: float
+  - name: sbert_197
+    type: float
+  - name: sbert_198
+    type: float
+  - name: sbert_199
+    type: float
+  - name: sbert_200
+    type: float
+  - name: sbert_201
+    type: float
+  - name: sbert_202
+    type: float
+  - name: sbert_203
+    type: float
+  - name: sbert_204
+    type: float
+  - name: sbert_205
+    type: float
+  - name: sbert_206
+    type: float
+  - name: sbert_207
+    type: float
+  - name: sbert_208
+    type: float
+  - name: sbert_209
+    type: float
+  - name: sbert_210
+    type: float
+  - name: sbert_211
+    type: float
+  - name: sbert_212
+    type: float
+  - name: sbert_213
+    type: float
+  - name: sbert_214
+    type: float
+  - name: sbert_215
+    type: float
+  - name: sbert_216
+    type: float
+  - name: sbert_217
+    type: float
+  - name: sbert_218
+    type: float
+  - name: sbert_219
+    type: float
+  - name: sbert_220
+    type: float
+  - name: sbert_221
+    type: float
+  - name: sbert_222
+    type: float
+  - name: sbert_223
+    type: float
+  - name: sbert_224
+    type: float
+  - name: sbert_225
+    type: float
+  - name: sbert_226
+    type: float
+  - name: sbert_227
+    type: float
+  - name: sbert_228
+    type: float
+  - name: sbert_229
+    type: float
+  - name: sbert_230
+    type: float
+  - name: sbert_231
+    type: float
+  - name: sbert_232
+    type: float
+  - name: sbert_233
+    type: float
+  - name: sbert_234
+    type: float
+  - name: sbert_235
+    type: float
+  - name: sbert_236
+    type: float
+  - name: sbert_237
+    type: float
+  - name: sbert_238
+    type: float
+  - name: sbert_239
+    type: float
+  - name: sbert_240
+    type: float
+  - name: sbert_241
+    type: float
+  - name: sbert_242
+    type: float
+  - name: sbert_243
+    type: float
+  - name: sbert_244
+    type: float
+  - name: sbert_245
+    type: float
+  - name: sbert_246
+    type: float
+  - name: sbert_247
+    type: float
+  - name: sbert_248
+    type: float
+  - name: sbert_249
+    type: float
+  - name: sbert_250
+    type: float
+  - name: sbert_251
+    type: float
+  - name: sbert_252
+    type: float
+  - name: sbert_253
+    type: float
+  - name: sbert_254
+    type: float
+  - name: sbert_255
+    type: float
+  - name: sbert_256
+    type: float
+  - name: sbert_257
+    type: float
+  - name: sbert_258
+    type: float
+  - name: sbert_259
+    type: float
+  - name: sbert_260
+    type: float
+  - name: sbert_261
+    type: float
+  - name: sbert_262
+    type: float
+  - name: sbert_263
+    type: float
+  - name: sbert_264
+    type: float
+  - name: sbert_265
+    type: float
+  - name: sbert_266
+    type: float
+  - name: sbert_267
+    type: float
+  - name: sbert_268
+    type: float
+  - name: sbert_269
+    type: float
+  - name: sbert_270
+    type: float
+  - name: sbert_271
+    type: float
+  - name: sbert_272
+    type: float
+  - name: sbert_273
+    type: float
+  - name: sbert_274
+    type: float
+  - name: sbert_275
+    type: float
+  - name: sbert_276
+    type: float
+  - name: sbert_277
+    type: float
+  - name: sbert_278
+    type: float
+  - name: sbert_279
+    type: float
+  - name: sbert_280
+    type: float
+  - name: sbert_281
+    type: float
+  - name: sbert_282
+    type: float
+  - name: sbert_283
+    type: float
+  - name: sbert_284
+    type: float
+  - name: sbert_285
+    type: float
+  - name: sbert_286
+    type: float
+  - name: sbert_287
+    type: float
+  - name: sbert_288
+    type: float
+  - name: sbert_289
+    type: float
+  - name: sbert_290
+    type: float
+  - name: sbert_291
+    type: float
+  - name: sbert_292
+    type: float
+  - name: sbert_293
+    type: float
+  - name: sbert_294
+    type: float
+  - name: sbert_295
+    type: float
+  - name: sbert_296
+    type: float
+  - name: sbert_297
+    type: float
+  - name: sbert_298
+    type: float
+  - name: sbert_299
+    type: float
+  - name: sbert_300
+    type: float
+  - name: sbert_301
+    type: float
+  - name: sbert_302
+    type: float
+  - name: sbert_303
+    type: float
+  - name: sbert_304
+    type: float
+  - name: sbert_305
+    type: float
+  - name: sbert_306
+    type: float
+  - name: sbert_307
+    type: float
+  - name: sbert_308
+    type: float
+  - name: sbert_309
+    type: float
+  - name: sbert_310
+    type: float
+  - name: sbert_311
+    type: float
+  - name: sbert_312
+    type: float
+  - name: sbert_313
+    type: float
+  - name: sbert_314
+    type: float
+  - name: sbert_315
+    type: float
+  - name: sbert_316
+    type: float
+  - name: sbert_317
+    type: float
+  - name: sbert_318
+    type: float
+  - name: sbert_319
+    type: float
+  - name: sbert_320
+    type: float
+  - name: sbert_321
+    type: float
+  - name: sbert_322
+    type: float
+  - name: sbert_323
+    type: float
+  - name: sbert_324
+    type: float
+  - name: sbert_325
+    type: float
+  - name: sbert_326
+    type: float
+  - name: sbert_327
+    type: float
+  - name: sbert_328
+    type: float
+  - name: sbert_329
+    type: float
+  - name: sbert_330
+    type: float
+  - name: sbert_331
+    type: float
+  - name: sbert_332
+    type: float
+  - name: sbert_333
+    type: float
+  - name: sbert_334
+    type: float
+  - name: sbert_335
+    type: float
+  - name: sbert_336
+    type: float
+  - name: sbert_337
+    type: float
+  - name: sbert_338
+    type: float
+  - name: sbert_339
+    type: float
+  - name: sbert_340
+    type: float
+  - name: sbert_341
+    type: float
+  - name: sbert_342
+    type: float
+  - name: sbert_343
+    type: float
+  - name: sbert_344
+    type: float
+  - name: sbert_345
+    type: float
+  - name: sbert_346
+    type: float
+  - name: sbert_347
+    type: float
+  - name: sbert_348
+    type: float
+  - name: sbert_349
+    type: float
+  - name: sbert_350
+    type: float
+  - name: sbert_351
+    type: float
+  - name: sbert_352
+    type: float
+  - name: sbert_353
+    type: float
+  - name: sbert_354
+    type: float
+  - name: sbert_355
+    type: float
+  - name: sbert_356
+    type: float
+  - name: sbert_357
+    type: float
+  - name: sbert_358
+    type: float
+  - name: sbert_359
+    type: float
+  - name: sbert_360
+    type: float
+  - name: sbert_361
+    type: float
+  - name: sbert_362
+    type: float
+  - name: sbert_363
+    type: float
+  - name: sbert_364
+    type: float
+  - name: sbert_365
+    type: float
+  - name: sbert_366
+    type: float
+  - name: sbert_367
+    type: float
+  - name: sbert_368
+    type: float
+  - name: sbert_369
+    type: float
+  - name: sbert_370
+    type: float
+  - name: sbert_371
+    type: float
+  - name: sbert_372
+    type: float
+  - name: sbert_373
+    type: float
+  - name: sbert_374
+    type: float
+  - name: sbert_375
+    type: float
+  - name: sbert_376
+    type: float
+  - name: sbert_377
+    type: float
+  - name: sbert_378
+    type: float
+  - name: sbert_379
+    type: float
+  - name: sbert_380
+    type: float
+  - name: sbert_381
+    type: float
+  - name: sbert_382
+    type: float
+  - name: sbert_383
+    type: float
+
+index_columns:
+  - name: asin
+    type: string
+  - name: reviewerID
+    type: string

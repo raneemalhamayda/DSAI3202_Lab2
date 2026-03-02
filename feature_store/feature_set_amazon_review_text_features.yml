@@ -1,0 +1,9 @@
+﻿$schema: http://azureml/sdk-2-0/Featureset.json
+name: amazon_review_text_features
+version: "1"
+description: Text features (length, sentiment, TF-IDF, SBERT)
+specification:
+  path: ./amazon_review_text_features/spec
+entities:
+  - azureml:AmazonReview:1
+stage: Development

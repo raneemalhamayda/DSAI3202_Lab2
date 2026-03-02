@@ -1,0 +1,10 @@
+﻿name: sentiment-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - pandas
+  - pyarrow
+  - pip:
+      - vaderSentiment==3.3.2
