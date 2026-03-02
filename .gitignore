@@ -7,3 +7,8 @@ merge_out_download/
 merge_all_download/
 merge_out/
 *.parquet
+
+merge_all_download/
+merge_out_download/
+*.parquet
+
