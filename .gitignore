@@ -12,3 +12,5 @@ merge_all_download/
 merge_out_download/
 *.parquet
 
+
+datastores/curated_adls.yml
