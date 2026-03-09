@@ -230,6 +230,48 @@ Submission Checklist (Branch: lab3)
 
 [x] Data visualizations included within the notebooks.
 
+
+# Lab 5 – Scalable Feature Extraction and Selection for Predictive Maintenance
+
+## Overview
+This project implements a reproducible feature engineering pipeline for predictive maintenance using the NASA C-MAPSS turbofan engine degradation dataset. The goal is to predict Remaining Useful Life (RUL) from multivariate time-series sensor data while designing an efficient feature extraction and selection workflow.
+
+The pipeline covers:
+- Dataset preparation using the FD001 subset
+- Time-series preprocessing and validation
+- Feature extraction using `tsfresh`
+- Filter-based feature selection
+- Genetic Algorithm feature selection using `DEAP`
+- Regression modeling for RUL prediction
+- Evaluation using RMSE and runtime measurements
+
+This work was developed for **DSAI3202 – Lab 5**.
+
+---
+
+## Objective
+Industrial systems produce large volumes of sensor-based time-series data. To make this data suitable for machine learning, meaningful features must first be extracted and then reduced to the most informative subset.
+
+The main objective of this lab is to build the fastest and most effective feature extraction and selection pipeline while maintaining strong predictive performance for Remaining Useful Life (RUL).
+
+---
+
+## Dataset
+This lab uses the **NASA C-MAPSS turbofan engine degradation dataset**, specifically the **FD001** subset.
+
+Files used:
+- `train_FD001.txt`
+- `test_FD001.txt`
+- `RUL_FD001.txt`
+
+Expected folder location:
+
+```text
+data/raw/
+├── train_FD001.txt
+├── test_FD001.txt
+└── RUL_FD001.txt
+
 [x] README updated with Medallion Architecture explanations.
 
 [x] Verified end-to-end execution of Databricks Jobs.
