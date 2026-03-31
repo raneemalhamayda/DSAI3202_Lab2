@@ -41,6 +41,8 @@ code push → Azure DevOps CI → Azure ML training job → MLflow tracking → 
 | Test | 1.0000 | 1.0000 |
 | **Deployment** | **0.8589** | **0.9217** |
 
+## screenshot in the screenshots folder (assingment2_screenshot)
+
 The drop in deployment accuracy (85.9%) compared to test (100%) demonstrates **data drift** — the deployment split contains the most recent reviews, which exhibit different language patterns than the training data.
 
 ## Repository Structure
