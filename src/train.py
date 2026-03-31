@@ -18,8 +18,8 @@ def parse_args():
     parser.add_argument("--test_data",    type=str, required=True)
     parser.add_argument("--deploy_data",  type=str, required=True)
     parser.add_argument("--model_output", type=str, required=True)
-    parser.add_argument("--C",            type=float, default=1.0)
-    parser.add_argument("--max_iter",     type=int,   default=1000)
+    parser.add_argument("--C", type=float, default=1.183)
+    parser.add_argument("--max_iter", type=int, default=1000)
     return parser.parse_args()
 
 def load_data(folder_path):
