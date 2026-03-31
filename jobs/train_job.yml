@@ -1,0 +1,40 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+type: command
+
+display_name: amazon-review-assignment2-train
+experiment_name: assignment2_manual_training
+description: Manual Assignment 2 training job using the 4 merged feature datasets
+
+code: ../src
+
+command: >-
+  python train.py
+  --train_data ${{inputs.train_data}}
+  --val_data ${{inputs.val_data}}
+  --test_data ${{inputs.test_data}}
+  --deploy_data ${{inputs.deploy_data}}
+  --model_output ${{outputs.model_output}}
+
+environment:
+  image: mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04
+  conda_file: ../env/conda.yaml
+
+compute: azureml:cpu-cluster
+
+inputs:
+  train_data:
+    type: uri_folder
+    path: azureml:amazon_review_merged_features_train@latest
+  val_data:
+    type: uri_folder
+    path: azureml:amazon_review_merged_features_val@latest
+  test_data:
+    type: uri_folder
+    path: azureml:amazon_review_merged_features_test@latest
+  deploy_data:
+    type: uri_folder
+    path: azureml:amazon_review_merged_features_deploy@latest
+
+outputs:
+  model_output:
+    type: uri_folder
