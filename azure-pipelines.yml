@@ -7,7 +7,7 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  AZURE_SUBSCRIPTION: SC-UDST-CCIT-DSAI3202-1
+  AZURE_SUBSCRIPTION: SC-UDST-CCIT-DSAI3202
   RESOURCE_GROUP: rg-60300390
   WORKSPACE_NAME: amazon-electronics-lab-60300390
 
